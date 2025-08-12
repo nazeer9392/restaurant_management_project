@@ -1,0 +1,10 @@
+from django.shortcuts import render
+
+def menu_list(request):
+    menu_items=[
+    {'name':'burger','price':120},
+    {'name':'pizza','price':250},
+    {'name':'pasta','price':180},
+    {'name':'sandwich','price':100},
+    ]
+    return render (request,'menu_list.html',{'menu_items':menu_items})
