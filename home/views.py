@@ -5,5 +5,6 @@ from django.conf import settings
     return render(request,'about.html')
 def homepage_view(request):
     context={
-        'phone_number':settings.RESTAU
+        'phone_number':settings.RESTAURANT_PHONE_NUMBER
     }
+    return render(request,'homepage.html',context)
