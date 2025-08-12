@@ -8,3 +8,6 @@ def menu_list(request):
     {'name':'sandwich','price':100},
     ]
     return render (request,'menu_list.html',{'menu_items':menu_items})
+
+def contact(request):
+    return render (request,'contact.html')
